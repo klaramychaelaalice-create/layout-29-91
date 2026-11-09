@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Baloo+2:wght@400..800&display=swap');
+
+* {
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    background-image: url(Pokadot.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    color: rgb(72, 63, 58);
+    background-color: rgba(208, 255, 236, 0.8);
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 25px;
+    border-radius: 20px;
+    box-shadow:
+        0 0 15px rgba(208, 255, 236, 0.6),
+        0 0 25px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+h1 {
+    color: rgb(255, 131, 184);
+    background-color: rgba(255, 252, 238, 0.8);
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 25px;
+    border-radius: 20px;
+    box-shadow:
+        0 0 15px rgba(255, 182, 193, 0.6),
+        0 0 25px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+div.biodata {
+    margin: 30px auto;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(66, 62, 58);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    box-shadow:
+        0 0 15px rgba(255, 182, 193, 0.35),
+        0 0 30px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+div.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.image {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 4px;
+    background: linear-gradient(135deg, #ffffff, #b6ffd2, #b3ffec);
+    box-shadow:
+        0 0 15px rgba(234, 229, 229, 0.8),
+        0 0 20px #ffc7e5;
+}
+
+div.image img.image {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+}
+
+div.image img.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 2;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+div.image img.bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+div.image:hover img.top {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+div.image:hover img.bottom {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+div.makanan,
+div.minuman,
+div.hobi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+img {
+    padding: 10px;
+}
+
+div.makanan h3,
+div.minuman h3,
+div.hobi h3 {
+    font-family: "Baloo 2", cursive;
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+div.makanan p,
+div.minuman p,
+div.hobi p {
+    font-family: "Baloo 2", cursive;
+    font-size: 18px;
+}
+
+div.pancakes {
+    width: 280px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 221, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.pancakes:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    box-shadow:
+        0 8px 20px rgba(255, 182, 193, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+div.cupcakes {
+    width: 280px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    background-color: rgba(255, 213, 226, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.cupcakes:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    box-shadow:
+        0 8px 20px rgba(255, 182, 193, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+div.ramen {
+    width: 280px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    background-color: rgba(255, 191, 152, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.ramen:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    box-shadow:
+        0 8px 20px rgba(255, 182, 193, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+div.cake {
+    width: 280px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    background-color: rgba(255, 244, 244, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.cake:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    box-shadow:
+        0 8px 20px rgba(255, 182, 193, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+div.latte {
+    width: 280px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    background-color: rgba(162, 234, 162, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.latte:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    box-shadow:
+        0 8px 20px rgba(255, 182, 193, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+div.oreo {
+    width: 280px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    background-color: rgba(232, 224, 224, 0.801);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.oreo:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    box-shadow:
+        0 8px 20px rgba(255, 182, 193, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+div.tea {
+    width: 280px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    background-color: rgba(207, 220, 255, 0.801);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.tea:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    box-shadow:
+        0 8px 20px rgba(255, 182, 193, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+div.milk {
+    width: 280px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 25px;
+    background-color: rgba(255, 198, 218, 0.801);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.milk:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    box-shadow:
+        0 8px 20px rgba(255, 182, 193, 0.4),
+        0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+div.memasak {
+    width: 400px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    margin-bottom: 25px;
+    background-color: rgba(255, 252, 226, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.memasak:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    box-shadow:
+        0 8px 20px rgba(255, 182, 193, 0.3),
+        0 0 25px rgba(255, 255, 255, 0.7);
+}
+
+div.musik {
+    width: 400px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    margin-bottom: 25px;
+    background-color: rgba(228, 255, 254, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.musik:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    box-shadow:
+        0 8px 20px rgba(255, 182, 193, 0.3),
+        0 0 25px rgba(255, 255, 255, 0.7);
+}

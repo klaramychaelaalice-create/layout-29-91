@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap');
+
+* {
+    font-family: "Fredoka", sans-serif;
+}
+
+body {
+    background-color: #fff5f7;
+    margin: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #d88fa8;
+    background-color: #f9dce5;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #659e94;
+    margin-top: 40px;
+}
+
+/* Tabel Biasa */
+.tabel-biasa {
+    width: 80%;
+    margin: 20px auto 50px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.tabel-biasa th {
+    background-color: #9bcfc5;
+    color: white;
+    padding: 12px;
+    border: 1px solid #659e94;
+}
+
+.tabel-biasa td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #9bcfc5;
+}
+
+.tabel-biasa tr:nth-child(even) {
+    background-color: #fce8ee;
+}
+
+/* Tabel Bentuk Tidak Beraturan */
+.tabel-macam {
+    width: 85%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.tabel-macam td {
+    border: 2px solid #659e94;
+    background-color: #c8e5df;
+    color: #426e66;
+    text-align: center;
+    padding: 25px;
+    font-size: 18px;
+}
+
+.tabel-macam tr:nth-child(even) td {
+    background-color: #f9dce5;
+}
